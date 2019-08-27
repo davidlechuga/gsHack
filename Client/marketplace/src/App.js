@@ -7,6 +7,8 @@ import Product from './Components/Product/Product';
 import Perfil from './Components/Perfil/Perfil';
 import Home from './Components/Home/Home';
 
+import ChartComponent from "./Components/ChartComponent/ChartComponent";
+
 /* html que sea renderizado   */
 
 class App extends Component {
@@ -15,8 +17,8 @@ class App extends Component {
        /* creamos el componente, extends trae todo lo que componente sabe */
   return (
     <div className="App">
-      <Navbar></Navbar>
-     
+      <Navbar/>
+      <ChartComponent/>
     </div>
   );
   }

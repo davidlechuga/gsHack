@@ -13,14 +13,4 @@ var config = {
 
 const FbApp = firebase.initializeApp(config);
 
-var database = firebase.database();
-
-
-function crearUsuario (nombre,apellido ){
-  firebase.database().ref("usuario").set({
-    nombre: nombre,
-    apellido:apellido,
-
-  })
-}
 module.exports = FbApp;
